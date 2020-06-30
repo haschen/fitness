@@ -1,0 +1,16 @@
+.page-section {
+
+}
+
+.page-section__container {
+  @include flexCenter;
+  @include horizontalCenter(85%);
+
+  @include tablet {
+    width: 88%;
+  }
+
+  @include tablet {
+    width: 91%;
+  }
+}

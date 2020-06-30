@@ -4,8 +4,8 @@
   font-style: normal;
   font-display: swap;
   src: local("Roboto Condensed"),
-    url("../fonts/robotoCondensedBold.woff2") format("woff2"),
-    url("../fonts/robotoCondensedBold.wofff") format("woff");
+    url("../fonts/robotoCondensedRegular.woff2") format("woff2"),
+    url("../fonts/robotoCondensedRegular.woff") format("woff");
 }
 
 @font-face {
@@ -14,9 +14,10 @@
   font-style: normal;
   font-display: swap;
   src: local("Roboto Condensed"),
-    url("../fonts/robotoCondensedRegular.woff2") format("woff2"),
-    url("../fonts/robotoCondensedRegular.woff") format("woff");
+    url("../fonts/robotoCondensedBold.woff2") format("woff2"),
+    url("../fonts/robotoCondensedBold.wofff") format("woff");
 }
+
 
 @font-face {
   font-weight: 400;
