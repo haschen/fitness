@@ -1,12 +1,13 @@
 .hero {
-  display: flex;
+  @include flex-container($alignment: flex-start);
+  /*display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  flex-wrap: nowrap;
+  flex-wrap: nowrap;*/
 
-  @include tablet {
+  /*@include tablet {
     align-items: flex-start;
-  }
+  }*/
 }
 
 .hero__text {
@@ -16,8 +17,8 @@
   padding-top: 12.3%;
 
   @include tablet {
-    width: 48.7%;
-    padding-top: 7.5%;
+    width: 47.7%;
+    padding-top: 7.75%;
   }
 
   @include mobile {
@@ -61,7 +62,7 @@
 
 .hero__list {
   @include font-source("Roboto Condensed", 1.03vw, #fff, 400, 150%);
-  @include pos-abs($top: 56.5%, $left: 5%);
+  @include pos-abs($t: 56.5%, $l: 5%);
   padding-left: 0;
   padding-right: 0;
   list-style: none;
@@ -69,11 +70,11 @@
 
   @include tablet {
     @include font-source($size: 1.85vw);
-    @include pos-abs($top: 50%, $left: 3%);
+    @include pos-abs($t: 50%, $l: 0);
   }
 
   @include mobile {
-    @include pos-abs($top: 57%, $left: 0);
+    @include pos-abs($t: 57%, $l: 0);
     @include font-source($size: 4.4vw);
     margin: 0;
   }
@@ -88,8 +89,8 @@
   overflow: hidden;
 
   @include tablet {
-    width: 47%;
-    padding-bottom: 57.2%;
+    width: 48%;
+    padding-bottom: 57.5%;
   }
 
   @include mobile {

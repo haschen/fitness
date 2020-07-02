@@ -1,0 +1,61 @@
+.video {
+  position: relative;
+}
+
+.video__cover {
+  position: relative;
+  height: 0;
+  width: 100%;
+  padding-bottom: 62.5%;
+  overflow: hidden;
+
+  @include tablet {
+    padding-bottom: 63.5%;
+  }
+
+  @include mobile {
+    padding-bottom: 52%;
+  }
+
+  img {
+    @include box(100%, auto);
+    @include pos-abs(0, 0, 0, 0);
+    overflow: hidden;
+  }
+}
+
+.video__btn {
+  @include pos-abs-center;
+  @include box(7.272vw, 7.272vw);
+  border-radius: 100%;
+  background: url("../img/svg/play.svg") no-repeat center/100%;
+
+  @include tablet {
+    @include box(9.5vw, 9.5vw);
+  }
+
+  @include mobile {
+    @include box(22.8vw, 22.8vw);
+  }
+
+  &::before {
+    @include pseudo-abs(null, null, 42%, 41%);
+    border: 0.52vw solid transparent;
+    border-left: 0.9vw solid #ffffff;
+    border-right: none;
+
+    @include tablet {
+      top: 41%;
+      right: 34%;
+      border: 0.72vw solid transparent;
+      border-left: 1.3vw solid #ffffff;
+    }
+
+    @include mobile {
+      top: 41.5%;
+      right: 35.5%;
+      border: 1.6vw solid transparent;
+      border-left: 2.5vw solid #ffffff;
+    }
+  }
+}

@@ -1,0 +1,126 @@
+.gym {
+  @include font-sources("Roboto Condensed", $blue--darken);
+  padding-top: 120px;
+  padding-bottom: 235px;
+
+  @include tablet {
+    padding-top: 96px;
+    padding-bottom: 182px;
+  }
+
+  @include mobile {
+    padding-top: 66px;
+    padding-bottom: 70px;
+  }
+}
+
+.gym__description {
+  padding-top: 3.8%;
+  padding-left: 5.3%;
+  width: 35.5%;
+  margin-right: 7.5%;
+
+  @include tablet {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  @include mobile {
+    text-align: left;
+    padding: 0 4.5%;
+  }
+}
+
+.gym__subtitle {
+  @include font-size(18px, 150%);
+  margin: 12px 0 39px 0;
+  font-weight: 400;
+
+  @include tablet {
+    margin: 12px 0 35px 0;
+  }
+
+  @include mobile {
+    margin: 9px 0 24px 0;
+  }
+}
+
+.gym__text {
+  @include font-size(16px, 150%);
+  font-weight: 300;
+  margin: 8px 0;
+
+  @include tablet {
+    @include horizontalCenter(74%);
+    margin-top: 0;
+    margin-bottom: 42px;
+  }
+
+  @include mobile {
+    width: 90%;
+    margin: 8px 0 32px;
+  }
+
+  &--only-desktop {
+    @include tablet {
+      display: none;
+    }
+  }
+}
+
+.gym__media {
+  position: relative;
+  width: 57%;
+
+  @include tablet {
+    width: 100%;
+  }
+
+  @include mobile {
+
+  }
+}
+
+.gym__image-wrap {
+  position: relative;
+  height: 0;
+  width: 100%;
+  padding-bottom: 61.5%;
+  overflow: hidden;
+
+  @include tablet {
+    padding-bottom: 50.9%;
+  }
+
+  @include mobile {
+    padding-bottom: 97.8%;
+  }
+}
+
+.gym__image {
+  @include box(100%, auto);
+  @include pos-abs(0, 0, 0, 0);
+  overflow: hidden;
+}
+
+.gym__video {
+  @include pos-abs($t: 71%, $l: -9.5%);
+  width: 55%;
+
+  @include tablet {
+    @include pos-abs($t: 75.5%, $l: 50%);
+    width: 39.3%;
+    transform: translateX(-50%);
+  }
+
+  @include mobile {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-top: 41px;
+    transform: none;
+  }
+}

@@ -3,26 +3,41 @@
   height: $h;
 }
 
-@mixin pos-abs ($top: false, $right: false, $bottom: false, $left: false) {
+@mixin pos-abs ($t: false, $r: false, $b: false, $l: false) {
   position: absolute;
-  @if $top {
-    top: $top;
+  @if $t {
+    top: $t;
   }
-  @if $right {
-    right: $right;
+  @if $r {
+    right: $r;
   }
-  @if $bottom {
-    bottom: $bottom;
+  @if $b {
+    bottom: $b;
   }
-  @if $left {
-    left: $left;
+  @if $l {
+    left: $l;
   }
+}
+
+@mixin pos-abs-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 @mixin horizontalCenter ($width) {
   width: $width;
   margin-left: auto;
   margin-right: auto;
+}
+
+@mixin flex-container($direction: row, $spacing: space-between, $alignment: null, $wrap: null) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $spacing;
+  align-items: $alignment;
+  flex-wrap: $wrap;
 }
 
 @mixin flexCenter ($direction: row) {
@@ -32,15 +47,15 @@
   align-items: center;
 }
 
-@mixin font-source($family: false, $size: false, $colour: false, $weight: false,  $lh: false, $ls: false) {
+@mixin font-source($family: false, $size: false, $color: false, $weight: false,  $lh: false, $ls: false) {
   @if $family {
     font-family: $family, "Helvetica", "Arial", sans-serif;
   }
   @if $size {
     font-size: $size;
   }
-  @if $colour {
-    color: $colour;
+  @if $color {
+    color: $color;
   }
   @if $weight {
     font-weight: $weight;
@@ -53,12 +68,36 @@
   }
 }
 
+@mixin font-sources($family: false, $color: false, $weight: false) {
+  @if $family {
+    font-family: $family, "Helvetica", "Arial", sans-serif;
+  }
+  @if $color {
+    color: $color;
+  }
+  @if $weight {
+    font-weight: $weight;
+  }
+}
 
-@mixin pseudo($width: 100%, $height: 100%, $display: block, $pos: absolute, $content: "") {
+@mixin font-size($size: false, $lh: false, $ls: false) {
+  @if $size {
+    font-size: $size;
+  }
+  @if $lh {
+    line-height: $lh;
+  }
+  @if $ls {
+    letter-spacing: $ls;
+  }
+}
+
+@mixin pseudo-abs($width: 100%, $height: 100%, $t: null, $r: null, $b: null, $l: null, $display: block, $content: "") {
   @include box($width, $height);
+  @include pos-abs($t, $r, $b, $l);
   content: $content;
   display: $display;
-  position: $pos;
+  position: absolute;
 }
 
 @mixin mobile {

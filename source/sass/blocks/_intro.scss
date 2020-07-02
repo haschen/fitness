@@ -7,10 +7,11 @@
 
   @include tablet {
     padding-top: 82px;
-    padding-bottom: 78px;
+    padding-bottom: 82px;
   }
 
   @include mobile {
+    padding: 0 4.5%;
     padding-top: 91px;
     padding-bottom: 80px;
   }
@@ -20,7 +21,7 @@
   width: 82.75%;
 
   @include tablet {
-    width: 98.5%;
+    width: 100%;
   }
 
   @include mobile {

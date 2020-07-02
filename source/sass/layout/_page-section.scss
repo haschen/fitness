@@ -1,16 +1,33 @@
 .page-section {
-
+  &--bg-white {
+    background: $bg-section--white;
+  }
 }
 
 .page-section__container {
-  @include flexCenter;
+  @include flex-container($alignment: flex-start);
   @include horizontalCenter(85%);
 
   @include tablet {
-    width: 88%;
+    width: 88.3%;
+    flex-wrap: wrap;
   }
 
+  @include mobile {
+    width: 100%;
+  }
+}
+
+.page-section__title {
+  @include font-sources("Bebas Neue", $blue--darken, 700,);
+  @include font-size(49px, 100%, 0.03em);
+  margin: 0;
+
   @include tablet {
-    width: 91%;
+    @include font-size(42px);
+  }
+
+  @include mobile {
+    @include font-size(32px);
   }
 }

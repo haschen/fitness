@@ -3,12 +3,10 @@
 @import "./config/fonts";
 @import "./config/mixins";
 @import "base";
-@import "./layout/page-header";
-@import "./layout/page-section";
-@import "./layout/page-footer";
 @import "./blocks/intro";
-@import "./blocks/gym";
 @import "./blocks/hero";
+@import "./blocks/gym";
+@import "./blocks/video";
 @import "./blocks/memberships";
 @import "./blocks/announcement";
 @import "./blocks/coaches";
@@ -16,3 +14,6 @@
 @import "./blocks/promotions";
 @import "./blocks/testimonials";
 @import "./blocks/contacts";
+@import "./layout/page-header";
+@import "./layout/page-section";
+@import "./layout/page-footer";
