@@ -1,0 +1,87 @@
+.memberships {
+  position: relative;
+  padding-top: 109px;
+  padding-bottom: 119px;
+  text-align: center;
+  z-index: 1;
+
+  &::after {
+    @include pseudo-abs(380px, 331px, 69.3%, -10%);
+    background-color: $red;
+    background: url("../img/memberships-bg-desktop@1x.png") no-repeat 100%/cover;
+    z-index: -1;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background: url("../img/memberships-bg-desktop@2x.png") no-repeat 100%/cover;
+    }
+  }
+
+  @include tablet {
+    padding-top: 97px;
+    padding-bottom: 100px;
+
+    &::after {
+      @include pseudo-abs(342px, 298px, 86.3%, -4.6%);
+      background: url("../img/memberships-bg-tablet@1x.png") no-repeat 100%/cover;
+
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background: url("../img/memberships-bg-tablet@2x.png") no-repeat 100%/cover;
+      }
+    }
+  }
+
+  @include mobile {
+    padding: 67px 4.5% 70px;
+
+    &::after {
+      content: none;
+    }
+  }
+}
+
+.memberships__content {
+  width: 100%;
+  margin-top: 38px;
+
+  @include tablet {
+    margin-top: 33px;
+  }
+
+  @include mobile {
+    margin-top: 24px;
+  }
+}
+
+.memberships__options {
+  @include flex-container($wrap: wrap);
+  margin-top: 38px;
+
+  @include tablet {
+    @include horizontalCenter(65%);
+    justify-content: center;
+    margin-top: 45px;
+  }
+
+  @include mobile {
+    width: 100%;
+    justify-content: center;
+    margin-top: 35px;
+  }
+}
+
+.memberships__card {
+  flex: 0 1 31.3%;
+
+  @include tablet {
+    flex: 1 1 100%;
+    margin-bottom: 41px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  @include mobile {
+    margin-bottom: 37px;
+  }
+}

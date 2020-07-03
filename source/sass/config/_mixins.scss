@@ -47,7 +47,7 @@
   align-items: center;
 }
 
-@mixin font-source($family: false, $size: false, $color: false, $weight: false,  $lh: false, $ls: false) {
+@mixin font-sources($family: false, $size: false, $color: false, $weight: false,  $lh: false, $ls: false) {
   @if $family {
     font-family: $family, "Helvetica", "Arial", sans-serif;
   }
@@ -68,7 +68,7 @@
   }
 }
 
-@mixin font-sources($family: false, $color: false, $weight: false) {
+@mixin font-source($family: false, $color: false, $weight: false) {
   @if $family {
     font-family: $family, "Helvetica", "Arial", sans-serif;
   }
@@ -100,6 +100,12 @@
   position: absolute;
 }
 
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 @mixin mobile {
   @media only screen and (max-width: $mobile-max-width) {
     @content;
@@ -111,3 +117,5 @@
     @content;
   }
 }
+
+

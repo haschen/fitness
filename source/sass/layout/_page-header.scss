@@ -42,16 +42,17 @@
     }
   }
 }
+
 .page-header__link {
-  @include font-source("Bebas Neue", 26px, #ffffff, 400, 100%, 0.03em);
+  @include font-sources("Bebas Neue", 26px, #ffffff, 400, 100%, 0.03em);
   display: block;
   text-decoration: none;
 
   @include tablet {
-    @include font-source($size: 24px, $ls: 0.02em);
+    @include font-sources($size: 24px, $ls: 0.02em);
   }
 
   @include mobile {
-    @include font-source($size: 20px);
+    @include font-sources($size: 20px);
   }
 }

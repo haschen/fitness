@@ -38,7 +38,7 @@
 }
 
 .intro__social-link {
-  @include font-source("Roboto Condensed", 12px, #fff, 400, 14px);
+  @include font-sources("Roboto Condensed", 12px, #fff, 400, 14px);
   display: block;
   margin-top: 19px;
   text-decoration: none;

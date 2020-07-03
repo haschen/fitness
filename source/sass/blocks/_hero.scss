@@ -27,16 +27,16 @@
 }
 
 .hero__headling {
-  @include font-source("Bebas Neue", 3.6vw, #fff, 400, 100%, 0.03em);
+  @include font-sources("Bebas Neue", 3.6vw, #fff, 400, 100%, 0.03em);
   margin: 0;
   text-align: right;
 
   @include tablet {
-    @include font-source($size: 4.5vw);
+    @include font-sources($size: 4.5vw);
   }
 
   @include mobile {
-    @include font-source($size: 8.8vw);
+    @include font-sources($size: 8.8vw);
   }
 
   &--big {
@@ -61,7 +61,7 @@
 }
 
 .hero__list {
-  @include font-source("Roboto Condensed", 1.03vw, #fff, 400, 150%);
+  @include font-sources("Roboto Condensed", 1.03vw, #fff, 400, 150%);
   @include pos-abs($t: 56.5%, $l: 5%);
   padding-left: 0;
   padding-right: 0;
@@ -69,13 +69,13 @@
   text-align: end;
 
   @include tablet {
-    @include font-source($size: 1.85vw);
+    @include font-sources($size: 1.85vw);
     @include pos-abs($t: 50%, $l: 0);
   }
 
   @include mobile {
     @include pos-abs($t: 57%, $l: 0);
-    @include font-source($size: 4.4vw);
+    @include font-sources($size: 4.4vw);
     margin: 0;
   }
 }
@@ -114,7 +114,7 @@
 }
 
 .hero__btn {
-  @include font-source("Roboto Condensed", 0.87vw, #fff, 700, 14px, 0.05em);
+  @include font-sources("Roboto Condensed", 0.87vw, #fff, 700, 14px, 0.05em);
   display: block;
   align-self: flex-end;
   margin-top: 66px;
@@ -125,13 +125,13 @@
   border: 4px solid #ffffff;
 
   @include tablet {
-    @include font-source($size: 1.55vw);
+    @include font-sources($size: 1.55vw);
     margin-top: 49px;
     padding: 2.5vw 4vw;
   }
 
   @include mobile {
-    @include font-source($size: 3.75vw);
+    @include font-sources($size: 3.75vw);
     padding: 6vw 26vw;
   }
 }

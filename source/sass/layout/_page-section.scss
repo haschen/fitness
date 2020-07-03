@@ -2,11 +2,20 @@
   &--bg-white {
     background: $bg-section--white;
   }
+
+  &--bg-purple {
+    background: $bg-section--purple;
+  }
 }
 
 .page-section__container {
   @include flex-container($alignment: flex-start);
   @include horizontalCenter(85%);
+
+  &--col {
+    @include flex-container($direction: column, $alignment: center);
+
+  }
 
   @include tablet {
     width: 88.3%;
@@ -19,9 +28,10 @@
 }
 
 .page-section__title {
-  @include font-sources("Bebas Neue", $blue--darken, 700,);
+  @include font-source("Bebas Neue", $blue--darken, 700,);
   @include font-size(49px, 100%, 0.03em);
   margin: 0;
+  width: 100%;
 
   @include tablet {
     @include font-size(42px);
