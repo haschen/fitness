@@ -1,0 +1,13 @@
+.announcement {
+  padding-top: 120px;
+  padding-bottom: 120px;
+
+  @include tablet {
+    padding-top: 100px;
+    padding-bottom: 120px;
+  }
+
+  @include mobile {
+    padding: 71px 4.5% 120px;
+  }
+}

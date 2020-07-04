@@ -1,18 +1,20 @@
 .memberships {
   position: relative;
   padding-top: 109px;
-  padding-bottom: 119px;
+  padding-bottom: 120px;
   text-align: center;
   z-index: 1;
 
   &::after {
-    @include pseudo-abs(380px, 331px, 69.3%, -10%);
-    background-color: $red;
-    background: url("../img/memberships-bg-desktop@1x.png") no-repeat 100%/cover;
+    @include pseudo-abs(100%, 390px, 67.3%, 0);
+    background-image: url("../img/memberships-bg-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-position: 114% 25%;
+    background-size: 380px;
     z-index: -1;
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      background: url("../img/memberships-bg-desktop@2x.png") no-repeat 100%/cover;
+      background-image: url("../img/memberships-bg-desktop@2x.png");
     }
   }
 
@@ -21,17 +23,20 @@
     padding-bottom: 100px;
 
     &::after {
-      @include pseudo-abs(342px, 298px, 86.3%, -4.6%);
-      background: url("../img/memberships-bg-tablet@1x.png") no-repeat 100%/cover;
+      @include pseudo-abs(100%, 298px, 86.3%, 0);
+      background-image: url("../img/memberships-bg-tablet@1x.png");
+      background-repeat: no-repeat;
+      background-position: 109% bottom;
+      background-size: 342px;
 
       @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-        background: url("../img/memberships-bg-tablet@2x.png") no-repeat 100%/cover;
+        background-image: url("../img/memberships-bg-tablet@2x.png");
       }
     }
   }
 
   @include mobile {
-    padding: 67px 4.5% 70px;
+    padding: 67px 4.5% 71px;
 
     &::after {
       content: none;

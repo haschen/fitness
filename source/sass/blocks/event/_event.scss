@@ -1,0 +1,109 @@
+.event {
+  @include font-source("Roboto Condensed", $white, 400);
+  @include flex-container($alignment: center);
+  background: $red--light;
+
+  @include mobile {
+    flex-direction: column;
+  }
+}
+
+.event__info {
+  @include flex-container($direction: column, $alignment: center);
+  width: 43%;
+  padding: 0 6.7%;
+  margin-bottom: 0.5%;
+
+  @include mobile {
+    width: 100%;
+    padding: 15.7% 15.7% 16.7%;
+    margin-bottom: 0;
+  }
+}
+
+.event__inner {
+  @include flex-container;
+  margin-bottom: 4%;
+
+  @include tablet {
+    margin-bottom: 2%;
+  }
+
+  @include mobile {
+    width: 100%;
+  }
+}
+
+.event__title {
+  @include font-source("Bebas Neue", $white, 700);
+  @include font-size(90px, 90px, 0.03em);
+  width: 70%;
+  margin: 0;
+  text-transform: uppercase;
+
+  @include tablet {
+    @include font-size(52px, 52px);
+    width: 60%;
+  }
+
+  @include mobile {
+    width: 45%;
+  }
+}
+
+.event__date {
+  width: 27%;
+}
+
+.event__description {
+  @include font-size(18px, 27px);
+  margin: 0 0 13.1%;
+  width: 100%;
+
+  @include tablet {
+    @include font-size(12px, 18px);
+    margin: 0 0 14.1%;
+  }
+
+  @include mobile {
+    margin: 0 0 15.1%;
+  }
+}
+
+.event__btn {
+  @include font-size(12px, 14px, 0.05em);
+  @include horizontalCenter (59%);
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 25px 15px;
+  color: $white;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 4px solid $white;
+
+  @include tablet {
+    @include font-size(10px, 12px);
+    padding: 12px 15px;
+    border: 2px solid $white;
+  }
+}
+
+.event__image-wrap {
+  position: relative;
+  height: 0;
+  width: 57%;
+  padding-bottom: 43%;
+  overflow: hidden;
+
+  @include mobile {
+    width: 100%;
+    padding-bottom: 100.8%;
+  }
+}
+
+.event__image {
+  @include box(100%, auto);
+  @include pos-abs(0, 0, 0, 0);
+  overflow: hidden;
+}

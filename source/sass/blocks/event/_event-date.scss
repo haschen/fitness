@@ -1,0 +1,73 @@
+.event-date {
+  max-width: 100px;
+
+  @include tablet {
+    max-width: 60px;
+  }
+}
+
+.event-date__title {
+  @include font-size(18px, 27px);
+  margin: 0;
+  padding: 3px 0 4px;
+  border-bottom: 1px solid $white;
+
+  @include tablet {
+    @include font-size(12px, 18px);
+    padding: 0;
+  }
+}
+
+.event-date__body {
+  @include flex-container($alignment: center, $wrap: nowrap);
+}
+
+
+.event-date__text {
+  @include font-size(14px, 21px);
+  margin: 0;
+
+  @include tablet {
+    @include font-size(10px, 15px);
+  }
+
+  &--big {
+    @include font-size(40px, 47px);
+    font-weight: 700;
+
+    @include tablet {
+      @include font-size(24px, 30px);
+    }
+  }
+}
+
+
+.event-date__item {
+  &--date {
+    margin-bottom: 13px;
+    padding-right: 30%;
+
+    @include tablet {
+      margin-bottom: 4px;
+      padding-right: 25%;
+    }
+  }
+
+  &--time {
+    padding-right: 2%;
+  }
+}
+
+.event-date__inner {
+  @include flex-container($alignment: center, $wrap: wrap);
+}
+
+.event-date__day {
+  width: 75%;
+  margin-right: 8px;
+
+  @include tablet {
+    width: 82%;
+    margin-right: 0;
+  }
+}
