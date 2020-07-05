@@ -1,0 +1,67 @@
+.coach {
+  position: relative;
+
+  &:hover {
+    box-shadow: 0 0 35px rgba(42, 59, 99, 0.17);
+
+    .coach__info {
+      top: 0;
+      height: auto;
+      background: rgba(16, 38, 84, 0.89);
+    }
+
+    .coach__name {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.coach__info {
+  @include pos-abs(66%, 0, 0, 0);
+  @include box(100%, 10%);
+  @include font-source("Roboto Condensed", $white, 400);
+  background: transparent;
+  text-align: center;
+  padding: 20% 0 0;
+}
+
+.coach__name {
+  @include font-size(18px, 27px);
+  margin: 0;
+  margin-bottom: 20%;
+  font-weight: 700;
+}
+
+.coach__spec {
+  @include font-size(16px, 24px);
+  margin: 0 0 11%;
+  color: #b6bdcc;
+}
+
+.coach__details {
+  @include font-size(14px, 21px);
+  @include horizontalCenter(64%);
+  text-align: left;
+}
+
+.coach__image-wrap {
+  position: relative;
+  height: 0;
+  width: 100%;
+  padding-bottom: 112%;
+  overflow: hidden;
+
+  @include tablet {
+    padding-bottom: 109.5%;
+  }
+
+  @include mobile {
+    padding-bottom: 121.3%;
+  }
+}
+
+.coach__image {
+  @include box(100%, auto);
+  @include pos-abs(0, 0, 0, 0);
+  overflow: hidden;
+}

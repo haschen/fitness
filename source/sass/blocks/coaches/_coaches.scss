@@ -1,0 +1,53 @@
+.coaches {
+  padding-bottom: 86px;
+
+  @include tablet {
+    text-align: center;
+  }
+}
+
+.coaches__list {
+  @include flex-container;
+  width: 100%;
+  padding-top: 55px;
+
+  @include tablet {
+    overflow: hidden;
+    padding: 45px 0;
+  }
+}
+
+.coaches__item {
+  flex: 0 0 22.5%;
+
+  @include tablet {
+    flex: 0 0 47.5%;
+    margin: 0 2.6%;
+
+    &:first-of-type {
+      margin-left: 0;
+    }
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+
+  @include mobile {
+    flex: 0 0 100%;
+    margin: 0;
+  }
+}
+
+.slider {
+  width: 100%;
+  position: relative;
+
+  @include tablet {
+    padding: 0 8.3%;
+  }
+
+  @include mobile {
+    padding: 0 14.7%;
+  }
+}

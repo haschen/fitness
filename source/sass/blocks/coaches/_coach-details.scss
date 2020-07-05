@@ -1,0 +1,22 @@
+.coach-details {
+  //list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+  padding-left: 24px;
+}
+
+.coach-details__item {
+  //position: relative;
+  margin-bottom: 13px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  &::before {
+    @include pseudo-abs(5px, 5px, 50%, -50%);
+    border-radius: 100%;
+    background: $white;
+  }
+}
