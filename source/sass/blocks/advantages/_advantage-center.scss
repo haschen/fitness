@@ -1,0 +1,50 @@
+.advantage-center {
+  @include font-source("Roboto Condensed", $white, 700);
+  @include flex-container($direction: column);
+  padding: 4.6% 2.5% 4.9%;
+  background: $blue--dark;
+
+  @include tablet {
+    padding: 34px 18.5% 37px;
+  }
+
+  @include mobile {
+    width: 100%;
+    padding: 0;
+  }
+
+  @include mobile {
+    width: 100%;
+    margin-top: 2px;
+    margin-bottom: 49px;
+    padding: 38px 22% 41px;
+  }
+}
+
+.advantage-center__title {
+  @include font-size(26px, 42px);
+  margin: 0 0 17%;
+
+  @include tablet {
+    @include font-size(22px, 30px);
+    margin: 0 0 15px;
+  }
+
+  @include mobile {
+    line-height: 22px;
+  }
+}
+
+.advantage-center__counter {
+  @include font-size(74px, 74px);
+}
+
+.advantage-center__description {
+  @include font-size(16px, 24px);
+  margin: 0;
+  font-weight: 400;
+
+  @include tablet {
+    margin: 0;
+  }
+}

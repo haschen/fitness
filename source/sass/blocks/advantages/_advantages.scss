@@ -1,0 +1,91 @@
+.advantages {
+  text-align: center;
+  padding-top: 115px;
+  padding-bottom: 106px;
+
+  @include tablet {
+    padding-top: 95px;
+    padding-bottom: 106px;
+  }
+
+  @include mobile {
+    padding-top: 65px;
+    padding-bottom: 106px;
+  }
+}
+
+.advantages__title {
+  margin-bottom: 71px;
+
+  @include tablet {
+    margin-bottom: 47px;
+  }
+
+  @include tablet {
+    margin-bottom: 55px;
+  }
+}
+
+.advantages__inner {
+  @include flex-container($direction: column);
+  width: 100%;
+  position: relative;
+}
+
+.advantages__group {
+  @include flex-container($spacing: center, $wrap: wrap);
+  width: 100%;
+  margin-bottom: 148px;
+  padding: 0 5.5% 0 7.5%;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  @include tablet {
+    margin-bottom: 35px;
+    padding: 0;
+  }
+
+  @include mobile {
+    margin-bottom: 0;
+  }
+}
+
+.advantages__item {
+  margin: 0 17%;
+  width: 33%;
+
+  &:nth-of-type(2n-1) {
+    margin-left: 0;
+  }
+
+  &:nth-of-type(2n) {
+    margin-right: 0;
+  }
+
+  @include tablet {
+    margin: 0 2%;
+    width: 48%;
+  }
+
+  @include mobile {
+    margin: 0 0 42px;
+    width: 71%;
+  }
+}
+
+.advantages__item--center {
+  @include pos-abs($r: 50%, $b: 52%);
+  width: 20.7%;
+  transform: translate(50%, 50%);
+
+  @include tablet {
+    @include horizontalCenter(65%);
+    position: relative;
+    margin-bottom: 43px;
+    right: 0;
+    bottom: 0;
+    transform: none;
+  }
+}

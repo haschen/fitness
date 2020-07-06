@@ -1,8 +1,13 @@
 .coaches {
-  padding-bottom: 86px;
+  padding-bottom: 120px;
 
   @include tablet {
     text-align: center;
+    padding-bottom: 55px;
+  }
+
+  @include mobile {
+    padding-bottom: 25px;
   }
 }
 
