@@ -1,6 +1,14 @@
 .testimonials {
   text-align: center;
   padding-bottom: 120px;
+
+  @include tablet {
+    padding-bottom: 100px;
+  }
+
+  @include mobile {
+    padding-bottom: 71px;
+  }
 }
 
 .testimonials__list {

@@ -6,6 +6,22 @@
   &--bg-purple {
     background: $bg-section--purple;
   }
+
+  &--half-width {
+    width: 50%;
+
+    @include tablet {
+      width: 100%;
+    }
+  }
+}
+
+.page-section__wrap {
+  @include flex-container();
+
+  @include tablet {
+    flex-wrap: wrap;
+  }
 }
 
 .page-section__container {
@@ -26,11 +42,49 @@
   }
 }
 
+.page-section__container--half-left {
+  width: 60%;
+  margin-left: auto;
+  margin-right: 25%;
+
+  @include tablet {
+    width: 62%;
+    margin-right: 20.7%;
+  }
+
+  @include mobile {
+    width: 100%;
+    padding: 0 4.5%;
+    margin: 0;
+  }
+}
+
+.page-section__container--half-right {
+  width: 60%;
+  margin-left: 17.7%;
+  margin-right: auto;
+
+  @include tablet {
+    width: 61.3%;
+    margin-left: 17.2%;
+  }
+
+  @include mobile {
+    width: 100%;
+    padding: 0 4.5%;
+    margin: 0;
+  }
+}
+
 .page-section__title {
   @include font-source("Bebas Neue", $blue--darken, 700,);
   @include font-size(49px, 100%, 0.03em);
   margin: 0;
   width: 100%;
+
+  &--white {
+    color: $white;
+  }
 
   @include tablet {
     @include font-size(42px);

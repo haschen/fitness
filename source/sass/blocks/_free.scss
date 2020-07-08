@@ -1,0 +1,10 @@
+.free {
+  text-align: left;
+  padding-top: 65px;
+  padding-bottom: 61px;
+  background: $blue--darken;
+
+  @include tablet {
+    padding-bottom: 67px;
+  }
+}
