@@ -1,0 +1,25 @@
+.testimonials {
+  text-align: center;
+  padding-bottom: 120px;
+}
+
+.testimonials__list {
+  @include flex-container;
+  @include horizontalCenter(41%);
+  margin-top: 56px;
+  overflow: hidden;
+
+  @include tablet {
+    width: 74%;
+    margin-top: 46px;
+  }
+
+  @include mobile {
+    width: 71%;
+    margin-top: 45px;
+  }
+}
+
+.testimonials__item {
+  flex: 0 0 100%;
+}

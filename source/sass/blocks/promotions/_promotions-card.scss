@@ -1,0 +1,75 @@
+.promotions-card {
+  @include flex-container($direction: column);
+  @include font-source("Roboto Condensed", $blue--dark);
+  padding: 3.2% 5% 5.2%;
+  border: 7px solid;
+  border-image: linear-gradient(-225deg, #d10942 0%, #00359f 100%) 1;
+
+  @include tablet {
+    padding: 2.6% 4% 4.2%;
+  }
+
+  @include mobile {
+    margin-bottom: 32px;
+    padding: 9.8% 14.5% 13%;
+    text-align: center;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.promotions-card__box {
+  margin-bottom: 14.3%;
+
+  @include tablet {
+    min-height: 90px;
+    margin-bottom: 18%;
+  }
+
+  @include mobile {
+    margin-bottom: 12.7%;
+  }
+}
+
+.promotions-card__title {
+  @include font-size(26px, 39px);
+  margin: 0 0 0.75%;
+  font-weight: 700;
+
+  @include tablet {
+    margin: 0 0 4px;
+  }
+}
+
+.promotions-card__description {
+  @include font-size(16px, 22px);
+  margin: 0;
+  font-weight: 400;
+}
+
+.promotions-card__more-link {
+  @include font-size(12px, 14px, 0.05em);
+  display: block;
+  align-self: start;
+  margin: 0;
+  font-weight: 700;
+  color: $blue--dark;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-bottom: 1px solid $blue--dark;
+
+  &:hover,
+  &:focus {
+    border-color: $red--light;
+  }
+
+  &:focus {
+    color: $red--light;
+  }
+
+  @include mobile {
+    align-self: center;
+  }
+}

@@ -1,7 +1,7 @@
 .gym {
   @include font-source("Roboto Condensed", $blue--darken);
   padding-top: 120px;
-  padding-bottom: 235px;
+  padding-bottom: 230px;
 
   @include tablet {
     padding-top: 96px;

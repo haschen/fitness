@@ -9,7 +9,7 @@
 }
 
 .page-section__container {
-  @include flex-container($alignment: flex-start);
+  @include flex-container($wrap: wrap);
   @include horizontalCenter(85%);
 
   &--col {

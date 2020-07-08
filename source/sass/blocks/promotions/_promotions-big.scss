@@ -1,0 +1,106 @@
+.promotions-big {
+  @include flex-container;
+  @include font-source("Roboto Condensed", $white);
+
+  @include mobile {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.promotions-big__box {
+  @include tablet {
+    margin-bottom: 99%;
+  }
+
+  @include mobile {
+    margin-bottom: 15%;
+  }
+}
+
+.promotions-big__info {
+  @include flex-container($direction: column);
+  width: 50%;
+  padding: 6.8% 8% 8%;
+  background: $red--light;
+
+  @include tablet {
+    width: 41%;
+    padding: 5.5% 6.5% 6.8%;
+  }
+
+  @include mobile {
+    width: 100%;
+    padding: 12.5% 15.5% 15.8%;
+  }
+}
+
+.promotions-big__title {
+  @include font-size(28px, 35px);
+  margin: 0 0 9%;
+  font-weight: 700;
+
+  @include mobile {
+    margin: 0 0 7%;
+  }
+}
+
+.promotions-big__accent {
+  @include font-size(70px, 70px);
+  display: block;
+}
+
+.promotions-big__description {
+  @include font-size(18px, 25px);
+  margin: 0;
+  font-weight: 400;
+}
+
+.promotions-big__more-link {
+  @include font-size(14px, 16px, 0.05em);
+  display: block;
+  align-self: start;
+  margin: 0;
+  font-weight: 700;
+  color: $white;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-bottom: 1px solid $white;
+
+  &:hover,
+  &:focus {
+    border-color: $blue--dark;
+  }
+
+  &:focus {
+    color: $blue--dark;
+  }
+
+  @include mobile {
+    align-self: center;
+  }
+}
+
+.promotions-big__image-wrap {
+  position: relative;
+  height: 0;
+  width: 50%;
+  padding-bottom: 82.4%;
+  overflow: hidden;
+
+  @include tablet {
+    width: 59%;
+    padding-bottom: 68.1%;
+  }
+
+  @include mobile {
+    width: 100%;
+    padding-bottom: 102.7%;
+  }
+}
+
+.promotions-big__image {
+  @include box(100%, auto);
+  @include pos-abs(0, 0, 0, 0);
+  overflow: hidden;
+}

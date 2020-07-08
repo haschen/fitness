@@ -5,12 +5,12 @@
 
   @include tablet {
     padding-top: 95px;
-    padding-bottom: 106px;
+    padding-bottom: 86px;
   }
 
   @include mobile {
     padding-top: 65px;
-    padding-bottom: 106px;
+    padding-bottom: 22px;
   }
 }
 
@@ -21,7 +21,7 @@
     margin-bottom: 47px;
   }
 
-  @include tablet {
+  @include mobile {
     margin-bottom: 55px;
   }
 }
