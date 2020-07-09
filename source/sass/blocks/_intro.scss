@@ -30,21 +30,20 @@
 }
 
 .intro__social-list {
+  @include reset-list;
   align-self: flex-end;
   margin-bottom: 45px;
-  padding-left: 0;
-  padding-right: 0;
-  list-style: none;
-}
-
-.intro__social-link {
-  @include font-sources("Roboto Condensed", 12px, #fff, 400, 14px);
-  display: block;
-  margin-top: 19px;
-  text-decoration: none;
-  text-transform: uppercase;
 
   @include tablet {
     display: none;
   }
+}
+
+.intro__social-link {
+  @include font-source ("Roboto Condensed",$white, 400);
+  @include font-size(12px, 14px);
+  display: block;
+  margin-top: 19px;
+  text-decoration: none;
+  text-transform: uppercase;
 }

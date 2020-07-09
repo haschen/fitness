@@ -29,12 +29,25 @@
 .page-header__logo {
   display: block;
 
+  &:hover,
+  &:focus {
+    svg {
+      fill: $blue--lightest;
+    }
+  }
+
+  &:active {
+    svg {
+      fill: $blue--lightest;
+    }
+  }
+
   svg {
     @include box(auto, 20px);
-    fill: #ffffff;
+    fill: $white;
 
     @include tablet {
-      height: 18px;
+      //height: 18px;
     }
 
     @include mobile {
@@ -44,15 +57,16 @@
 }
 
 .page-header__link {
-  @include font-sources("Bebas Neue", 26px, #ffffff, 400, 100%, 0.03em);
+  @include font-source("Bebas Neue", $white, 400);
+  @include font-size(26px, 26px, 0.03em);
   display: block;
   text-decoration: none;
 
   @include tablet {
-    @include font-sources($size: 24px, $ls: 0.02em);
+    @include font-size($size: 24px, $ls: 0.02em);
   }
 
   @include mobile {
-    @include font-sources($size: 20px);
+    font-size: 20px;
   }
 }
