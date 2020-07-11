@@ -10,7 +10,7 @@
   <header class="page-header">
     <div class="page-header__container">
       <a href="" class="page-header__logo" aria-label="На главную">
-        <svg width="87" height="20" xmlns="http://www.w3.org/2000/svg">
+        <svg width="87" height="20" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 87 20">
           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./img/svg/sprite.svg#icon-logo"></use>
         </svg>
       </a>
@@ -183,103 +183,214 @@
         </div>
       </article>
     </section>
+
+
     <section class="coaches  page-section  page-section--bg-white" id="navcoaches">
+
       <div class="page-section__container  page-section__container--col">
         <h2 class="page-section__title">Тренеры</h2>
-        <div class="slider">
-          <div class="coaches__list">
-            <div class="coaches__item">
-              <article class="coach">
-                <div class="coach__image-wrap">
-                  <picture class="lazy">
-                    <source media="(min-width: 1200px)" type="image/webp" srcset="./img/coach1-desktop@1x.webp 1x, ./img/coach1-desktop@2x.webp 2x">
-                    <source media="(min-width: 768px)" type="image/webp" srcset="./img/coach1-tablet@1x.webp 1x, ./img/coach1-tablet@2x.webp 2x">
-                    <source media="(max-width: 767px)" type="image/webp" srcset="./img/coach1-mobile@1x.webp 1x, ./img/coach1-mobile@2x.webp 2x">
-                    <!-- 1х: 260px; 2x: 520px -->
-                    <img class="coach__image" src="./img/coach1-desktop@1x.jpg" alt="Super Games - ежегодные соревнования по CrossFit" srcset="./img/coach1-desktop@1x.jpg 1x, ./img/coach1-desktop@2x.jpg 2x" width="260" height="294">
-                  </picture>
-                  <div class="coach__info">
-                    <h3 class="coach__name">Анна Павлова</h3>
-                    <p class="coach__spec">CrossFit</p>
-                    <ul class="coach__details  coach-details">
-                      <li class="coach-details__item">Certified Level 3 Trainer</li>
-                      <li class="coach-details__item">Победитель чемпионата России по CrossFit</li>
-                      <li class="coach-details__item">Опыт — 6 лет</li>
-                    </ul>
+
+        <div class="coaches__slider  coaches-slider">
+          <div class="coaches-slider__container">
+
+            <div class="coaches__list  coaches-slider__wrapper">
+
+              <div class="coaches__item  coaches-slider__slide">
+                <article class="coach">
+                  <div class="coach__image-wrap">
+                    <picture class="lazy">
+                      <source media="(min-width: 1200px)" type="image/webp" srcset="./img/coach1-desktop@1x.webp 1x, ./img/coach1-desktop@2x.webp 2x">
+                      <source media="(min-width: 768px)" type="image/webp" srcset="./img/coach1-tablet@1x.webp 1x, ./img/coach1-tablet@2x.webp 2x">
+                      <source media="(max-width: 767px)" type="image/webp" srcset="./img/coach1-mobile@1x.webp 1x, ./img/coach1-mobile@2x.webp 2x">
+                      <!-- 1х: 260px; 2x: 520px -->
+                      <img class="coach__image" src="./img/coach1-desktop@1x.jpg" alt="Super Games - ежегодные соревнования по CrossFit" srcset="./img/coach1-desktop@1x.jpg 1x, ./img/coach1-desktop@2x.jpg 2x" width="260" height="294">
+                    </picture>
+                    <div class="coach__info">
+                      <h3 class="coach__name">Анна Павлова</h3>
+                      <p class="coach__spec">CrossFit</p>
+                      <ul class="coach__details  coach-details">
+                        <li class="coach-details__item">Certified Level 3 Trainer</li>
+                        <li class="coach-details__item">Победитель чемпионата России по CrossFit</li>
+                        <li class="coach-details__item">Опыт — 6 лет</li>
+                      </ul>
+                    </div>
                   </div>
-                </div>
-              </article>
-            </div>
-            <div class="coaches__item">
-              <article class="coach">
-                <div class="coach__image-wrap">
-                  <picture class="lazy">
-                    <source media="(min-width: 1200px)" type="image/webp" srcset="./img/coach2-desktop@1x.webp 1x, ./img/coach2-desktop@2x.webp 2x">
-                    <source media="(min-width: 768px)" type="image/webp" srcset="./img/coach2-tablet@1x.webp 1x, ./img/coach2-tablet@2x.webp 2x">
-                    <source media="(max-width: 767px)" type="image/webp" srcset="./img/coach2-mobile@1x.webp 1x, ./img/coach2-mobile@2x.webp 2x">
-                    <!-- 1х: 260px; 2x: 520px -->
-                    <img class="coach__image" src="./img/coach2-desktop@1x.jpg" alt="Super Games - ежегодные соревнования по CrossFit" srcset="./img/coach2-desktop@1x.jpg 1x, ./img/coach2-desktop@2x.jpg 2x" width="260" height="294">
-                  </picture>
-                  <div class="coach__info">
-                    <h3 class="coach__name">Алексей Лавров</h3>
-                    <p class="coach__spec">CrossFit</p>
-                    <ul class="coach__details  coach-details">
-                      <li class="coach-details__item">Certified Level 3 Trainer</li>
-                      <li class="coach-details__item">Победитель чемпионата России по CrossFit</li>
-                      <li class="coach-details__item">Опыт — 6 лет</li>
-                    </ul>
+                </article>
+              </div>
+
+              <div class="coaches__item  coaches-slider__slide">
+                <article class="coach">
+                  <div class="coach__image-wrap">
+                    <picture class="lazy">
+                      <source media="(min-width: 1200px)" type="image/webp" srcset="./img/coach2-desktop@1x.webp 1x, ./img/coach2-desktop@2x.webp 2x">
+                      <source media="(min-width: 768px)" type="image/webp" srcset="./img/coach2-tablet@1x.webp 1x, ./img/coach2-tablet@2x.webp 2x">
+                      <source media="(max-width: 767px)" type="image/webp" srcset="./img/coach2-mobile@1x.webp 1x, ./img/coach2-mobile@2x.webp 2x">
+                      <!-- 1х: 260px; 2x: 520px -->
+                      <img class="coach__image" src="./img/coach2-desktop@1x.jpg" alt="Super Games - ежегодные соревнования по CrossFit" srcset="./img/coach2-desktop@1x.jpg 1x, ./img/coach2-desktop@2x.jpg 2x" width="260" height="294">
+                    </picture>
+                    <div class="coach__info">
+                      <h3 class="coach__name">Алексей Лавров</h3>
+                      <p class="coach__spec">CrossFit</p>
+                      <ul class="coach__details  coach-details">
+                        <li class="coach-details__item">Certified Level 3 Trainer</li>
+                        <li class="coach-details__item">Победитель чемпионата России по CrossFit</li>
+                        <li class="coach-details__item">Опыт — 6 лет</li>
+                      </ul>
+                    </div>
                   </div>
-                </div>
-              </article>
-            </div>
-            <div class="coaches__item">
-              <article class="coach">
-                <div class="coach__image-wrap">
-                  <picture class="lazy">
-                    <source media="(min-width: 1200px)" type="image/webp" srcset="./img/coach3-desktop@1x.webp 1x, ./img/coach3-desktop@2x.webp 2x">
-                    <source media="(min-width: 768px)" type="image/webp" srcset="./img/coach3-tablet@1x.webp 1x, ./img/coach3-tablet@2x.webp 2x">
-                    <source media="(max-width: 767px)" type="image/webp" srcset="./img/coach3-mobile@1x.webp 1x, ./img/coach3-mobile@2x.webp 2x">
-                    <!-- 1х: 260px; 2x: 520px -->
-                    <img class="coach__image" src="./img/coach3-desktop@1x.jpg" alt="Super Games - ежегодные соревнования по CrossFit" srcset="./img/coach3-desktop@1x.jpg 1x, ./img/coach3-desktop@2x.jpg 2x" width="260" height="294">
-                  </picture>
-                  <div class="coach__info">
-                    <h3 class="coach__name">Александр Пашков</h3>
-                    <p class="coach__spec">CrossFit</p>
-                    <ul class="coach__details  coach-details">
-                      <li class="coach-details__item">Certified Level 3 Trainer</li>
-                      <li class="coach-details__item">Победитель чемпионата России по CrossFit</li>
-                      <li class="coach-details__item">Опыт — 6 лет</li>
-                    </ul>
+                </article>
+              </div>
+
+              <div class="coaches__item  coaches-slider__slide">
+                <article class="coach">
+                  <div class="coach__image-wrap">
+                    <picture class="lazy">
+                      <source media="(min-width: 1200px)" type="image/webp" srcset="./img/coach3-desktop@1x.webp 1x, ./img/coach3-desktop@2x.webp 2x">
+                      <source media="(min-width: 768px)" type="image/webp" srcset="./img/coach3-tablet@1x.webp 1x, ./img/coach3-tablet@2x.webp 2x">
+                      <source media="(max-width: 767px)" type="image/webp" srcset="./img/coach3-mobile@1x.webp 1x, ./img/coach3-mobile@2x.webp 2x">
+                      <!-- 1х: 260px; 2x: 520px -->
+                      <img class="coach__image" src="./img/coach3-desktop@1x.jpg" alt="Super Games - ежегодные соревнования по CrossFit" srcset="./img/coach3-desktop@1x.jpg 1x, ./img/coach3-desktop@2x.jpg 2x" width="260" height="294">
+                    </picture>
+                    <div class="coach__info">
+                      <h3 class="coach__name">Александр Пашков</h3>
+                      <p class="coach__spec">CrossFit</p>
+                      <ul class="coach__details  coach-details">
+                        <li class="coach-details__item">Certified Level 3 Trainer</li>
+                        <li class="coach-details__item">Победитель чемпионата России по CrossFit</li>
+                        <li class="coach-details__item">Опыт — 6 лет</li>
+                      </ul>
+                    </div>
                   </div>
-                </div>
-              </article>
-            </div>
-            <div class="coaches__item">
-              <article class="coach">
-                <div class="coach__image-wrap">
-                  <picture class="lazy">
-                    <source media="(min-width: 1200px)" type="image/webp" srcset="./img/coach4-desktop@1x.webp 1x, ./img/coach4-desktop@2x.webp 2x">
-                    <source media="(min-width: 768px)" type="image/webp" srcset="./img/coach4-tablet@1x.webp 1x, ./img/coach4-tablet@2x.webp 2x">
-                    <source media="(max-width: 767px)" type="image/webp" srcset="./img/coach4-mobile@1x.webp 1x, ./img/coach4-mobile@2x.webp 2x">
-                    <!-- 1х: 260px; 2x: 520px -->
-                    <img class="coach__image" src="./img/coach4-desktop@1x.jpg" alt="Super Games - ежегодные соревнования по CrossFit" srcset="./img/coach4-desktop@1x.jpg 1x, ./img/coach4-desktop@2x.jpg 2x" width="260" height="294">
-                  </picture>
-                  <div class="coach__info">
-                    <h3 class="coach__name">Мария Кетова</h3>
-                    <p class="coach__spec">CrossFit</p>
-                    <ul class="coach__details  coach-details">
-                      <li class="coach-details__item">Certified Level 3 Trainer</li>
-                      <li class="coach-details__item">Победитель чемпионата России по CrossFit</li>
-                      <li class="coach-details__item">Опыт — 6 лет</li>
-                    </ul>
+                </article>
+              </div>
+
+              <div class="coaches__item  coaches-slider__slide">
+                <article class="coach">
+                  <div class="coach__image-wrap">
+                    <picture class="lazy">
+                      <source media="(min-width: 1200px)" type="image/webp" srcset="./img/coach4-desktop@1x.webp 1x, ./img/coach4-desktop@2x.webp 2x">
+                      <source media="(min-width: 768px)" type="image/webp" srcset="./img/coach4-tablet@1x.webp 1x, ./img/coach4-tablet@2x.webp 2x">
+                      <source media="(max-width: 767px)" type="image/webp" srcset="./img/coach4-mobile@1x.webp 1x, ./img/coach4-mobile@2x.webp 2x">
+                      <!-- 1х: 260px; 2x: 520px -->
+                      <img class="coach__image" src="./img/coach4-desktop@1x.jpg" alt="Super Games - ежегодные соревнования по CrossFit" srcset="./img/coach4-desktop@1x.jpg 1x, ./img/coach4-desktop@2x.jpg 2x" width="260" height="294">
+                    </picture>
+                    <div class="coach__info">
+                      <h3 class="coach__name">Мария Кетова</h3>
+                      <p class="coach__spec">CrossFit</p>
+                      <ul class="coach__details  coach-details">
+                        <li class="coach-details__item">Certified Level 3 Trainer</li>
+                        <li class="coach-details__item">Победитель чемпионата России по CrossFit</li>
+                        <li class="coach-details__item">Опыт — 6 лет</li>
+                      </ul>
+                    </div>
                   </div>
-                </div>
-              </article>
+                </article>
+              </div>
+
+              <div class="coaches__item  coaches-slider__slide">
+                <article class="coach">
+                  <div class="coach__image-wrap">
+                    <picture class="lazy">
+                      <source media="(min-width: 1200px)" type="image/webp" srcset="./img/coach1-desktop@1x.webp 1x, ./img/coach1-desktop@2x.webp 2x">
+                      <source media="(min-width: 768px)" type="image/webp" srcset="./img/coach1-tablet@1x.webp 1x, ./img/coach1-tablet@2x.webp 2x">
+                      <source media="(max-width: 767px)" type="image/webp" srcset="./img/coach1-mobile@1x.webp 1x, ./img/coach1-mobile@2x.webp 2x">
+                      <!-- 1х: 260px; 2x: 520px -->
+                      <img class="coach__image" src="./img/coach1-desktop@1x.jpg" alt="Super Games - ежегодные соревнования по CrossFit" srcset="./img/coach1-desktop@1x.jpg 1x, ./img/coach1-desktop@2x.jpg 2x" width="260" height="294">
+                    </picture>
+                    <div class="coach__info">
+                      <h3 class="coach__name">Анна Павлова</h3>
+                      <p class="coach__spec">CrossFit</p>
+                      <ul class="coach__details  coach-details">
+                        <li class="coach-details__item">Certified Level 3 Trainer</li>
+                        <li class="coach-details__item">Победитель чемпионата России по CrossFit</li>
+                        <li class="coach-details__item">Опыт — 6 лет</li>
+                      </ul>
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <div class="coaches__item  coaches-slider__slide">
+                <article class="coach">
+                  <div class="coach__image-wrap">
+                    <picture class="lazy">
+                      <source media="(min-width: 1200px)" type="image/webp" srcset="./img/coach2-desktop@1x.webp 1x, ./img/coach2-desktop@2x.webp 2x">
+                      <source media="(min-width: 768px)" type="image/webp" srcset="./img/coach2-tablet@1x.webp 1x, ./img/coach2-tablet@2x.webp 2x">
+                      <source media="(max-width: 767px)" type="image/webp" srcset="./img/coach2-mobile@1x.webp 1x, ./img/coach2-mobile@2x.webp 2x">
+                      <!-- 1х: 260px; 2x: 520px -->
+                      <img class="coach__image" src="./img/coach2-desktop@1x.jpg" alt="Super Games - ежегодные соревнования по CrossFit" srcset="./img/coach2-desktop@1x.jpg 1x, ./img/coach2-desktop@2x.jpg 2x" width="260" height="294">
+                    </picture>
+                    <div class="coach__info">
+                      <h3 class="coach__name">Алексей Лавров</h3>
+                      <p class="coach__spec">CrossFit</p>
+                      <ul class="coach__details  coach-details">
+                        <li class="coach-details__item">Certified Level 3 Trainer</li>
+                        <li class="coach-details__item">Победитель чемпионата России по CrossFit</li>
+                        <li class="coach-details__item">Опыт — 6 лет</li>
+                      </ul>
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <div class="coaches__item  coaches-slider__slide">
+                <article class="coach">
+                  <div class="coach__image-wrap">
+                    <picture class="lazy">
+                      <source media="(min-width: 1200px)" type="image/webp" srcset="./img/coach3-desktop@1x.webp 1x, ./img/coach3-desktop@2x.webp 2x">
+                      <source media="(min-width: 768px)" type="image/webp" srcset="./img/coach3-tablet@1x.webp 1x, ./img/coach3-tablet@2x.webp 2x">
+                      <source media="(max-width: 767px)" type="image/webp" srcset="./img/coach3-mobile@1x.webp 1x, ./img/coach3-mobile@2x.webp 2x">
+                      <!-- 1х: 260px; 2x: 520px -->
+                      <img class="coach__image" src="./img/coach3-desktop@1x.jpg" alt="Super Games - ежегодные соревнования по CrossFit" srcset="./img/coach3-desktop@1x.jpg 1x, ./img/coach3-desktop@2x.jpg 2x" width="260" height="294">
+                    </picture>
+                    <div class="coach__info">
+                      <h3 class="coach__name">Александр Пашков</h3>
+                      <p class="coach__spec">CrossFit</p>
+                      <ul class="coach__details  coach-details">
+                        <li class="coach-details__item">Certified Level 3 Trainer</li>
+                        <li class="coach-details__item">Победитель чемпионата России по CrossFit</li>
+                        <li class="coach-details__item">Опыт — 6 лет</li>
+                      </ul>
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <div class="coaches__item  coaches-slider__slide">
+                <article class="coach">
+                  <div class="coach__image-wrap">
+                    <picture class="lazy">
+                      <source media="(min-width: 1200px)" type="image/webp" srcset="./img/coach4-desktop@1x.webp 1x, ./img/coach4-desktop@2x.webp 2x">
+                      <source media="(min-width: 768px)" type="image/webp" srcset="./img/coach4-tablet@1x.webp 1x, ./img/coach4-tablet@2x.webp 2x">
+                      <source media="(max-width: 767px)" type="image/webp" srcset="./img/coach4-mobile@1x.webp 1x, ./img/coach4-mobile@2x.webp 2x">
+                      <!-- 1х: 260px; 2x: 520px -->
+                      <img class="coach__image" src="./img/coach4-desktop@1x.jpg" alt="Super Games - ежегодные соревнования по CrossFit" srcset="./img/coach4-desktop@1x.jpg 1x, ./img/coach4-desktop@2x.jpg 2x" width="260" height="294">
+                    </picture>
+                    <div class="coach__info">
+                      <h3 class="coach__name">Мария Кетова</h3>
+                      <p class="coach__spec">CrossFit</p>
+                      <ul class="coach__details  coach-details">
+                        <li class="coach-details__item">Certified Level 3 Trainer</li>
+                        <li class="coach-details__item">Победитель чемпионата России по CrossFit</li>
+                        <li class="coach-details__item">Опыт — 6 лет</li>
+                      </ul>
+                    </div>
+                  </div>
+                </article>
+              </div>
+
             </div>
+
           </div>
+
+          <button class="coaches-slider__ctrl  coaches-slider__ctrl--prev"></button>
+          <button class="coaches-slider__ctrl  coaches-slider__ctrl--next"></button>
         </div>
       </div>
+
     </section>
+
+
     <section class="advantages  page-section  page-section--bg-purple">
       <div class="page-section__container  page-section__container--col">
         <h2 class="page-section__title  advantages__title">Наши преимущества</h2>
@@ -386,52 +497,60 @@
     </section>
     <section class="testimonials  page-section  page-section--bg-white">
       <h2 class="page-section__title">Отзывы</h2>
-      <div class="testimonials__list">
-        <article class="testimonials__item  testimonials-card">
-          <div class="testimonials-card__inner">
-            <div class="testimonials-card__box">
-              <div class="testimonials-card__image-wrap">
-                <picture class="lazy">
-                  <source type="image/webp" srcset="./img/testimonials-desktop@1x.webp 1x, ./img/testimonials-desktop@2x.webp 2x">
-                  <!-- 1х: 80px; 2x: 160px -->
-                  <img class="testimonials-card__image" src="./img/testimonials-desktop@1x.jpg" alt="Super Games - ежегодные соревнования по CrossFit" srcset="./img/testimonials-desktop@1x.jpg 1x, ./img/testimonials-desktop@2x.jpg 2x" width="80" height="80">
-                </picture>
+      <div class="testimonials__slider  testimonials-slider">
+        <div class="testimonials-slider__container">
+          <div class="testimonials__list  testimonials-slider__wrapper">
+            <article class="testimonials__item  testimonials-card  testimonials-slider__slide">
+              <div class="testimonials-card__inner">
+                <div class="testimonials-card__box">
+                  <div class="testimonials-card__image-wrap">
+                    <picture class="lazy">
+                      <source type="image/webp" srcset="./img/testimonials-desktop@1x.webp 1x, ./img/testimonials-desktop@2x.webp 2x">
+                      <!-- 1х: 80px; 2x: 160px -->
+                      <img class="testimonials-card__image" src="./img/testimonials-desktop@1x.jpg" alt="Super Games - ежегодные соревнования по CrossFit" srcset="./img/testimonials-desktop@1x.jpg 1x, ./img/testimonials-desktop@2x.jpg 2x" width="80" height="80">
+                    </picture>
+                  </div>
+                </div>
+                <p class="testimonials-card__title">Анна Орлова</p>
+                <p class="testimonials-card__text">«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
               </div>
-            </div>
-            <p class="testimonials-card__title">Анна Орлова</p>
-            <p class="testimonials-card__text">«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
-          </div>
-        </article>
-        <article class="testimonials__item  testimonials-card">
-          <div class="testimonials-card__inner">
-            <div class="testimonials-card__box">
-              <div class="testimonials-card__image-wrap">
-                <picture class="lazy">
-                  <source type="image/webp" srcset="./img/testimonials-desktop@1x.webp 1x, ./img/testimonials-desktop@2x.webp 2x">
-                  <!-- 1х: 80px; 2x: 160px -->
-                  <img class="testimonials-card__image" src="./img/testimonials-desktop@1x.jpg" alt="Super Games - ежегодные соревнования по CrossFit" srcset="./img/testimonials-desktop@1x.jpg 1x, ./img/testimonials-desktop@2x.jpg 2x" width="80" height="80">
-                </picture>
+            </article>
+            <article class="testimonials__item  testimonials-card  testimonials-slider__slide">
+              <div class="testimonials-card__inner">
+                <div class="testimonials-card__box">
+                  <div class="testimonials-card__image-wrap">
+                    <picture class="lazy">
+                      <source type="image/webp" srcset="./img/testimonials-desktop@1x.webp 1x, ./img/testimonials-desktop@2x.webp 2x">
+                      <!-- 1х: 80px; 2x: 160px -->
+                      <img class="testimonials-card__image" src="./img/testimonials-desktop@1x.jpg" alt="Super Games - ежегодные соревнования по CrossFit" srcset="./img/testimonials-desktop@1x.jpg 1x, ./img/testimonials-desktop@2x.jpg 2x" width="80" height="80">
+                    </picture>
+                  </div>
+                </div>
+                <p class="testimonials-card__title">Анна Орлова</p>
+                <p class="testimonials-card__text">«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
               </div>
-            </div>
-            <p class="testimonials-card__title">Анна Орлова</p>
-            <p class="testimonials-card__text">«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
-          </div>
-        </article>
-        <article class="testimonials__item  testimonials-card">
-          <div class="testimonials-card__inner">
-            <div class="testimonials-card__box">
-              <div class="testimonials-card__image-wrap">
-                <picture class="lazy">
-                  <source type="image/webp" srcset="./img/testimonials-desktop@1x.webp 1x, ./img/testimonials-desktop@2x.webp 2x">
-                  <!-- 1х: 80px; 2x: 160px -->
-                  <img class="testimonials-card__image" src="./img/testimonials-desktop@1x.jpg" alt="Super Games - ежегодные соревнования по CrossFit" srcset="./img/testimonials-desktop@1x.jpg 1x, ./img/testimonials-desktop@2x.jpg 2x" width="80" height="80">
-                </picture>
+            </article>
+            <article class="testimonials__item  testimonials-card  testimonials-slider__slide">
+              <div class="testimonials-card__inner">
+                <div class="testimonials-card__box">
+                  <div class="testimonials-card__image-wrap">
+                    <picture class="lazy">
+                      <source type="image/webp" srcset="./img/testimonials-desktop@1x.webp 1x, ./img/testimonials-desktop@2x.webp 2x">
+                      <!-- 1х: 80px; 2x: 160px -->
+                      <img class="testimonials-card__image" src="./img/testimonials-desktop@1x.jpg" alt="Super Games - ежегодные соревнования по CrossFit" srcset="./img/testimonials-desktop@1x.jpg 1x, ./img/testimonials-desktop@2x.jpg 2x" width="80" height="80">
+                    </picture>
+                  </div>
+                </div>
+                <p class="testimonials-card__title">Анна Орлова</p>
+                <p class="testimonials-card__text">«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
               </div>
-            </div>
-            <p class="testimonials-card__title">Анна Орлова</p>
-            <p class="testimonials-card__text">«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+            </article>
           </div>
-        </article>
+
+          <button class="testimonials-slider__ctrl  testimonials-slider__ctrl--prev"></button>
+          <button class="testimonials-slider__ctrl  testimonials-slider__ctrl--next"></button>
+
+        </div>
       </div>
     </section>
     <div class="page-section__wrap">
@@ -442,9 +561,9 @@
             <div class="request-form__content">
               <label class="visually-hidden" for="name-field">Введите Ваше Имя</label>
               <input class="request-form__field" type="text" placeholder="Имя" required="" id="name-field">
-              <p class="request-form__error-notice">Номер телефона должен содержать только цифры</p>
               <label class="visually-hidden" for="tel-field">Введите Ваш номер телефона</label>
               <input class="request-form__field" type="tel" placeholder="Телефон" required="" id="tel-field">
+              <p class="request-form__error-notice">Номер телефона должен содержать только цифры</p>
               <button class="request-form__btn" type="submit">Отправить</button>
             </div>
           </form>
@@ -533,6 +652,7 @@
       </ul>
     </div>
   </footer>
+  <script src="./js/swiper-bundle.min.js"></script>
   <script src="./js/main.js"></script>
 </body>
 </html>

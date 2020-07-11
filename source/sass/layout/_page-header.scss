@@ -29,29 +29,25 @@
 .page-header__logo {
   display: block;
 
+  svg {
+    @include box(auto, 20px);
+    fill: $white;
+
+    @include mobile {
+      height: 15px;
+    }
+  }
+
   &:hover,
   &:focus {
     svg {
-      fill: $blue--lightest;
+      fill: $blue--darken;
     }
   }
 
   &:active {
     svg {
-      fill: $blue--lightest;
-    }
-  }
-
-  svg {
-    @include box(auto, 20px);
-    fill: $white;
-
-    @include tablet {
-      //height: 18px;
-    }
-
-    @include mobile {
-      height: 15px;
+      fill: $blue--light;
     }
   }
 }
@@ -61,6 +57,15 @@
   @include font-size(26px, 26px, 0.03em);
   display: block;
   text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: $blue--darken;
+  }
+
+  &:active {
+    color: $blue--light;
+  }
 
   @include tablet {
     @include font-size($size: 24px, $ls: 0.02em);

@@ -47,27 +47,6 @@
   align-items: center;
 }
 
-@mixin font-sources($family: false, $size: false, $color: false, $weight: false,  $lh: false, $ls: false) {
-  @if $family {
-    font-family: $family, "Helvetica", "Arial", sans-serif;
-  }
-  @if $size {
-    font-size: $size;
-  }
-  @if $color {
-    color: $color;
-  }
-  @if $weight {
-    font-weight: $weight;
-  }
-  @if $lh {
-    line-height: $lh;
-  }
-  @if $ls {
-    letter-spacing: $ls;
-  }
-}
-
 @mixin font-source($family: false, $color: false, $weight: false) {
   @if $family {
     font-family: $family, "Helvetica", "Arial", sans-serif;
@@ -92,8 +71,8 @@
   }
 }
 
-@mixin pseudo-abs($width: 100%, $height: 100%, $t: null, $r: null, $b: null, $l: null, $display: block, $content: "") {
-  @include box($width, $height);
+@mixin pseudo-abs($w: 100%, $h: 100%, $t: null, $r: null, $b: null, $l: null, $display: block, $content: "") {
+  @include box($w, $h);
   @include pos-abs($t, $r, $b, $l);
   content: $content;
   display: $display;

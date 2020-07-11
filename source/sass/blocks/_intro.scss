@@ -1,19 +1,15 @@
 .intro {
-  padding-top: 50px;
-  padding-bottom: 49px;
+  padding: 50px 0 49px;
   background: url("../img/svg/header-bg.svg") center no-repeat;
   background-size: cover;
   background: conic-gradient(from 130.31deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
 
   @include tablet {
-    padding-top: 82px;
-    padding-bottom: 82px;
+    padding: 82px 0;
   }
 
   @include mobile {
-    padding: 0 4.5%;
-    padding-top: 91px;
-    padding-bottom: 80px;
+    padding: 91px 4.5% 80px;
   }
 }
 
@@ -40,10 +36,19 @@
 }
 
 .intro__social-link {
-  @include font-source ("Roboto Condensed",$white, 400);
+  @include font-source ("Roboto Condensed", $white, 400);
   @include font-size(12px, 14px);
   display: block;
   margin-top: 19px;
   text-decoration: none;
   text-transform: uppercase;
+
+  &:hover,
+  &:focus {
+    color: $blue--lightest;
+  }
+
+  &:active {
+    color: $blue--light;
+  }
 }

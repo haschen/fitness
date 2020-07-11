@@ -13,9 +13,15 @@
 
 .testimonials__list {
   @include flex-container;
+}
+
+.testimonials__item {
+  flex: 0 0 100%;
+}
+
+.testimonials__slider {
   @include horizontalCenter(41%);
   margin-top: 56px;
-  overflow: hidden;
 
   @include tablet {
     width: 74%;
@@ -28,6 +34,80 @@
   }
 }
 
-.testimonials__item {
-  flex: 0 0 100%;
+.testimonials-slider__container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.testimonials-slider {
+  position: relative;
+}
+
+.testimonials-slider__ctrl {
+  @include pos-abs($t: 50%);
+  @include box(16px, 32px);
+  padding: 0;
+  transform: translateY(-50%);
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  overflow: hidden;
+
+  &::after {
+    @include pseudo-abs(24px, 24px, 1px);
+    position: relative;
+    border-bottom: 1px solid $grey;
+    border-left: 1px solid $grey;
+  }
+
+  &--next {
+    right: -55px;
+
+    &::after {
+      right: 13px;
+      transform: rotate(225deg);
+    }
+  }
+
+  &--prev {
+    left: -55px;
+
+    &::after {
+      right: -5px;
+      transform: rotate(45deg);
+    }
+  }
+
+  &:hover,
+  &:focus {
+
+  }
+
+  &:active {
+    outline: none;
+  }
+
+  @include tablet {
+    &--next {
+      right: -11%;
+    }
+
+    &--prev {
+      left: -11%;
+    }
+  }
+
+  @include mobile {
+    svg {
+      @include box(auto, 19px);
+    }
+
+    &--next {
+      right: -17%;
+    }
+
+    &--prev {
+      left: -17%;
+    }
+  }
 }

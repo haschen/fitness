@@ -62,10 +62,11 @@
 
   &:hover,
   &:focus {
-    border-color: $red--light;
+    border-color: transparent;
+    color: $red;
   }
 
-  &:focus {
+  &:active {
     color: $red--light;
   }
 

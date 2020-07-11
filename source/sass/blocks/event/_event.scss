@@ -82,6 +82,17 @@
   text-decoration: none;
   border: 4px solid $white;
 
+  &:hover,
+  &:focus {
+    color: $red--light;
+    background: $white;
+  }
+
+  &:active {
+    color: $red--light;
+    background: darken($white, 15%);
+  }
+
   @include tablet {
     @include font-size(10px, 12px);
     padding: 12px 15px;

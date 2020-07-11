@@ -69,11 +69,12 @@
 
   &:hover,
   &:focus {
-    border-color: $blue--dark;
+    border-color: transparent;
+    color: $blue--darken;
   }
 
-  &:focus {
-    color: $blue--dark;
+  &:active {
+    color: $blue--light;
   }
 
   @include mobile {
