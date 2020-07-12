@@ -5,7 +5,7 @@
 .hero__text {
   @include flex-container($direction: column);
   width: 41.3%;
-  padding-top: 12.3%;
+  padding-top: 12.2%;
 
   @include tablet {
     width: 47.7%;
@@ -55,7 +55,7 @@
 .hero__list {
   @include font-source("Roboto Condensed", $white, 400);
   @include font-size(1.03vw, 150%);
-  @include pos-abs($t: 56.5%, $l: 5%);
+  @include pos-abs($t: 62.5%, $l: 5%);
   @include reset-list;
   text-align: end;
 
@@ -104,7 +104,7 @@
   @include font-size(0.87vw, 14px, 0.05em);
   display: block;
   align-self: flex-end;
-  margin-top: 66px;
+  margin-top: 4.71vw;
   padding: 1.4vw 4vw;
   text-align: center;
   text-transform: uppercase;
