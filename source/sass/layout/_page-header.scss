@@ -33,6 +33,10 @@
     @include box(auto, 20px);
     fill: $white;
 
+    @include tablet {
+      height: 18px;
+    }
+
     @include mobile {
       height: 15px;
     }

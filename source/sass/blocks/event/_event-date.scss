@@ -16,6 +16,11 @@
     @include font-size(12px, 18px);
     padding: 0;
   }
+
+  @include mobile {
+    @include font-size(12px, 18px);
+    padding: 0 0 2px;
+  }
 }
 
 .event-date__body {
