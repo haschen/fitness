@@ -44,7 +44,7 @@
   }
 }
 
-.memberships__content {
+.memberships__tabs {
   width: 100%;
   margin-top: 38px;
 
@@ -54,23 +54,6 @@
 
   @include mobile {
     margin-top: 24px;
-  }
-}
-
-.memberships__options {
-  @include flex-container($wrap: wrap);
-  margin-top: 38px;
-
-  @include tablet {
-    @include horizontalCenter(65%);
-    justify-content: center;
-    margin-top: 45px;
-  }
-
-  @include mobile {
-    width: 100%;
-    justify-content: center;
-    margin-top: 35px;
   }
 }
 

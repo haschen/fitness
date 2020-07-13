@@ -12,10 +12,11 @@
 @import "./blocks/hero";
 @import "./blocks/gym";
 @import "./blocks/video";
-@import "./blocks/memberships";
-@import "./blocks/memberships-card";
+@import "./blocks/memberships/memberships";
+@import "./blocks/memberships/memberships-card";
+@import "./blocks/memberships/_memberships-tabs/memberships-tabs";
+@import "./blocks/memberships/_memberships-tabs/memberships-tabs-nav";
 @import "./blocks/price";
-@import "./blocks/memberships-terms";
 @import "./blocks/announcement";
 @import "./blocks/event/event";
 @import "./blocks/event/event-date";
@@ -29,6 +30,7 @@
 @import "./blocks/promotions/promotions-big";
 @import "./blocks/promotions/promotions-card";
 @import "./blocks/testimonials/testimonials";
+@import "./blocks/testimonials/testimonials-slider";
 @import "./blocks/testimonials/testimonials-card";
 @import "./blocks/request-form";
 @import "./blocks/free";
