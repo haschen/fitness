@@ -1,11 +1,15 @@
 .contacts {
   padding-top: 65px;
-  padding-bottom: 61px;
+  padding-bottom: 60px;
   text-align: left;
   border-top: 1px solid $blue--lighten;
 
   @include tablet {
     padding-bottom: 62px;
+  }
+
+  @include mobile {
+    padding-top: 67px;
   }
 }
 
@@ -21,15 +25,15 @@
 
   @include mobile {
     flex-wrap: wrap;
-    margin-top: 39px;
+    //margin-top: 38px;
   }
 }
 
 .contacts__separator {
-  align-self: center;
+  align-self: flex-start;
   width: 1px;
-  height: 63%;
-  margin-top: 39px;
+  height: 87%;
+  margin-top: 1.5%;
   background: $blue--lighten;
 
   @include mobile {

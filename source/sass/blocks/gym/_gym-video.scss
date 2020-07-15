@@ -1,8 +1,36 @@
-.video {
-  position: relative;
+.gym-video {
+  //position: relative;
 }
 
-.video__cover {
+.gym-video__player {
+  display: none;
+  position: relative;
+  height: 0;
+  width: 100%;
+  padding-bottom: 62.5%;
+  overflow: hidden;
+
+  @include tablet {
+    padding-bottom: 63.5%;
+  }
+
+  @include mobile {
+    padding-bottom: 52%;
+  }
+
+
+  iframe {
+    @include box(100%, 100%);
+    @include pos-abs(0, 0, 0, 0);
+    overflow: hidden;
+  }
+}
+
+.gym-video__player.active {
+  display: block;
+}
+
+.gym-video__cover {
   position: relative;
   height: 0;
   width: 100%;
@@ -24,7 +52,7 @@
   }
 }
 
-.video__btn {
+.gym-video__btn {
   @include pos-abs-center;
   @include box(7.272vw, 7.272vw);
   border-radius: 100%;

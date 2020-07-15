@@ -1,2 +1,3 @@
-# Bicycles
+# Fitness
+
 Проект акселератора HTML Academy

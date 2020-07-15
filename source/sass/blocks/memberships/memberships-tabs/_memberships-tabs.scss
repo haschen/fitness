@@ -2,7 +2,6 @@
   @include flex-container($spacing: center);
 }
 
-//.memberships-terms__list {
 .memberships-tabs-nav__list {
   @include reset-list;
   @include flex-container;
@@ -10,12 +9,11 @@
   border-bottom: 2px solid #e4e4e4;
 }
 
-//.memberships-terms__item {
 .memberships-tabs-nav__item {
   @include font-size(20px, 150%);
   position: relative;
   margin: 0 23px;
-  padding-bottom: 11px;
+  padding-bottom: 12px;
   cursor: pointer;
 
   &:first-of-type {
@@ -49,35 +47,5 @@
     font-size: 16px;
     margin: 0 23px;
   }
-}
-
-.memberships-tabs-nav__item.active {
-  color: $blue--darken;
-  cursor: default;
-
-  &::after {
-    background: $red;
-  }
-}
-
-.memberships-tabs__panel {
-  display: none;
-  margin-top: 38px;
-
-  @include tablet {
-    @include horizontalCenter(65%);
-    justify-content: center;
-    margin-top: 45px;
-  }
-
-  @include mobile {
-    width: 100%;
-    justify-content: center;
-    margin-top: 35px;
-  }
-}
-
-.memberships-tabs__panel.active {
-  @include flex-container($wrap: wrap);
 }
 

@@ -1,0 +1,56 @@
+.page-footer-social {
+  @include flex-container($spacing: flex-end, $alignment: center);
+  @include reset-list;
+
+  @include mobile {
+    margin-top: 10px;
+  }
+}
+
+.page-footer-social__item {
+  margin-right: 25px;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+
+  @include tablet {
+    margin-right: 20px;
+  }
+
+  @include mobile {
+    margin-right: 35px;
+  }
+}
+
+.page-footer-social__link {
+  &:hover,
+  &:focus {
+    .page-footer-social__icon {
+      fill: $blue--lightest;
+    }
+  }
+
+  &:active {
+    .page-footer-social__icon {
+      fill: $blue--lightest;
+    }
+  }
+}
+
+.page-footer-social__icon {
+  @include box(auto, 24px);
+  fill: $white;
+
+  @include mobile {
+    @include box(auto, 27px);
+  }
+
+  &--vk {
+    @include box(auto, 13px);
+
+    @include mobile {
+      @include box(auto, 17px);
+    }
+  }
+}

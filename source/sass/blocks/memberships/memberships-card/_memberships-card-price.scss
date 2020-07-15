@@ -1,20 +1,19 @@
-.price {
+.memberships-card-price {
   position: relative;
 }
 
-.price__currency {
+.memberships-card-price__сurrency {
   color: $blue--darken;
 }
 
-.price__shadow {
+.memberships-card-price__shadow {
   @include pos-abs($r: 0, $b: -6%, $l: 0);
-  @include font-source("Roboto Condensed", $grey, 700);
+  @include font-source("Roboto Condensed", $grey--light, 700);
   @include font-size(100px, 150px);
   opacity: 0.48;
   z-index: -1;
 
   @include mobile {
     @include font-size(80px, 120px);
-    //right: 21%;
   }
 }

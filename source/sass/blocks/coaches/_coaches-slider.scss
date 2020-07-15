@@ -1,13 +1,25 @@
-.testimonials-slider {
+.coaches__slider {
   position: relative;
+  width: 100%;
+  margin-top: 55px;
+
+  @include tablet {
+    @include horizontalCenter(83.4%);
+    margin-top: 45px;
+  }
+
+  @include mobile {
+    width: 70.625%;
+  }
 }
 
-.testimonials-slider__container {
+.coaches-slider__container {
   width: 100%;
   overflow: hidden;
 }
 
-.testimonials-slider__ctrl {
+
+.coaches-slider__ctrl {
   @include pos-abs($t: 50%);
   @include box(32px, 32px);
   padding: 0;
@@ -18,14 +30,14 @@
   overflow: hidden;
 
   &::after {
-    @include pseudo-abs(24px, 24px, 0);
+    @include pseudo-abs(24px, 24px, 1px);
     position: relative;
     border-bottom: 1px solid $grey;
     border-left: 1px solid $grey;
   }
 
   &--next {
-    right: -10.7%;
+    right: -5%;
 
     &::after {
       transform: rotate(225deg);
@@ -33,7 +45,7 @@
   }
 
   &--prev {
-    left: -10.7%;
+    left: -5%;
 
     &::after {
       right: -5px;
@@ -58,7 +70,6 @@
   @include mobile {
     &::after {
       @include box(14px, 14px);
-      top: 2px;
     }
 
     &--next {

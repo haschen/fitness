@@ -1,0 +1,67 @@
+.page-footer {
+  padding: 41px 0 39px;
+  background: $bg-footer;
+
+  @include tablet {
+    padding: 45px 0 41px;
+  }
+
+  @include mobile {
+    padding: 50px 0 46px;
+  }
+}
+
+.page-footer__container {
+  @include flex-container($alignment: center);
+  @include horizontalCenter(85%);
+  position: relative;
+
+  @include tablet {
+    width: 88%;
+  }
+
+  @include mobile {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 90%;
+  }
+}
+
+.page-footer__nav {
+  flex-grow: 1;
+}
+
+.page-footer__logo {
+  display: block;
+
+  &:hover,
+  &:focus {
+    svg {
+      fill: $blue--lightest;
+    }
+  }
+
+  &:active {
+    svg {
+      fill: $blue--lightest;
+    }
+  }
+
+  @include mobile {
+    @include pos-abs($r: 0, $l: 0);
+    @include box(20px, 87px);
+  }
+
+  svg {
+    @include box(auto, 20px);
+    fill: $white;
+
+    @include tablet {
+      height: 18px;
+    }
+
+    @include mobile {
+      height: 15px;
+    }
+  }
+}

@@ -54,7 +54,6 @@
 
   var tabs = function (tabsContainer){
     var tabsNav = document.querySelector(tabsContainer + ' *[data-js=\'tabsNav\']');
-    console.log(tabsNav);
 
     tabsNav.addEventListener('click', function(e) {
       e.preventDefault();
@@ -158,7 +157,6 @@
 
   form.addEventListener("submit", function (e) {
     e.preventDefault();
-    console.log(telValidation());
     (telValidation() === 1) ? sendData() : showValidErrorMsg();
   });
 
@@ -193,15 +191,15 @@
     }
   }
 
-  var playButton = document.querySelector(".video__btn");
-  var videoCover = document.querySelector(".video__cover");
-
+  var playButton = document.querySelector(".gym-video__btn");
+  var videoCover = document.querySelector(".gym-video__cover");
+  var playerContainer = document.querySelector(".gym-video__player");
   playButton.addEventListener("click", function(e) {
     e.preventDefault();
     createYTPlayer();
     playButton.hidden = true;
     videoCover.hidden = true;
-
+    playerContainer.classList.add('active');
    })
 
 

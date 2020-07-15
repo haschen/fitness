@@ -20,7 +20,7 @@
 
   @include tablet {
     padding-top: 97px;
-    padding-bottom: 100px;
+    padding-bottom: 99px;
 
     &::after {
       @include pseudo-abs(100%, 298px, 86.3%, 0);
@@ -70,6 +70,6 @@
   }
 
   @include mobile {
-    margin-bottom: 37px;
+    margin-bottom: 36px;
   }
 }

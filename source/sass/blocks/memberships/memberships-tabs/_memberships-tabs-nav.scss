@@ -1,0 +1,30 @@
+.memberships-tabs-nav__item.active {
+  color: $blue--darken;
+  cursor: default;
+
+  &::after {
+    background: $red;
+  }
+}
+
+.memberships-tabs__panel {
+  display: none;
+  margin-top: 38px;
+
+  @include tablet {
+    @include horizontalCenter(65%);
+    justify-content: center;
+    margin-top: 45px;
+  }
+
+  @include mobile {
+    width: 100%;
+    justify-content: center;
+    margin-top: 35px;
+  }
+}
+
+.memberships-tabs__panel.active {
+  @include flex-container($wrap: wrap);
+}
+

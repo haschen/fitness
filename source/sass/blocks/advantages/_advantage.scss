@@ -2,10 +2,15 @@
   @include flex-container($spacing: flex-start);
   @include font-source("Roboto Condensed", $blue--darken, 400);
   text-align: left;
-  max-width: 330px;
+  padding: 0 6px 0 18px;
+
+  &--incr-padd-left {
+    padding-left: 26px;
+  }
+  //max-width: 330px;
 
   @include tablet {
-    max-width: 100%;
+    padding: 0;
   }
 
   @include mobile {
@@ -35,7 +40,7 @@
   }
 
   @include mobile {
-    margin: 3px 0 0;
+    margin: 4px 0 0;
   }
 }
 

@@ -1,0 +1,7 @@
+.page-wrap {
+  @include flex-container();
+
+  @include tablet {
+    flex-wrap: wrap;
+  }
+}

@@ -1,33 +1,42 @@
 .advantage-center {
   @include font-source("Roboto Condensed", $white, 700);
-  @include flex-container($direction: column);
-  padding: 4.6% 2.5% 4.9%;
-  background: $blue--dark;
+  padding: 0 5.8%;
+  background: $bg-section--purple;
 
   @include tablet {
-    padding: 34px 18.5% 37px;
-  }
-
-  @include mobile {
-    width: 100%;
     padding: 0;
+    //max-width: 555px;
   }
 
   @include mobile {
     width: 100%;
-    margin-top: 2px;
-    margin-bottom: 49px;
-    padding: 38px 22% 41px;
+    //max-width: 415px;
+  }
+}
+
+.advantage-center__container {
+  @include flex-container($direction: column);
+  background: $blue--dark;
+  padding: 23% 14.3% 24%;
+
+  @include tablet {
+    padding: 7.5% 29.3% 9%;
+  }
+
+  @include mobile {
+    padding: 11.5% 22.3% 13.5%;
   }
 }
 
 .advantage-center__title {
   @include font-size(26px, 42px);
-  margin: 0 0 17%;
+  margin: 0 auto 31px;
+  max-width: 250px;
 
   @include tablet {
     @include font-size(22px, 30px);
-    margin: 0 0 15px;
+    margin: 0 auto 15px;
+    max-width: 230px;
   }
 
   @include mobile {
