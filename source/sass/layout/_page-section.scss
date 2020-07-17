@@ -25,7 +25,7 @@
 }
 
 .page-section__container {
-  @include flex-container($wrap: wrap);
+  @include flex-container($alignment: center, $wrap: wrap);
   @include horizontalCenter(84.92%);
 
   &--col {

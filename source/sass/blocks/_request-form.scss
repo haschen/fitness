@@ -17,22 +17,30 @@
 }
 
 .request-form__field {
-  @include font-size(14px, 16px);
+  @include font-size(14px, 24px);
   display: block;
   width: 46%;
-  padding: 4px 0;
+  padding: 0;
   color: $white;
   border: none;
   border-bottom: 1px solid $blue--lighten;
   background: $blue--darken;
-  outline: none;
+  outline-offset: 2px;
+  transition: all 0.3s ease;
 
   &::placeholder {
     color: $white;
+    opacity: 1;
   }
 
   &:focus {
-    outline: none;
+    background: $blue--light;
+    outline: 1px solid $blue--lightest;
+
+    &::placeholder {
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
   }
 
   @include tablet {
@@ -61,6 +69,7 @@
   background: $blue--darken;
   border: 3px solid $white;
   cursor: pointer;
+  transition: all 0.3s ease;
 
   &:hover,
   &:focus {
@@ -74,7 +83,7 @@
   }
 
   @include mobile {
-    margin-top: 3px;
+    margin-top: 2px;
   }
 }
 

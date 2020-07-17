@@ -54,36 +54,67 @@
 
 .gym-video__btn {
   @include pos-abs-center;
-  @include box(7.272vw, 7.272vw);
+  @include box(5.272vw, 5.272vw);
   border-radius: 100%;
-  background: url("../img/svg/play.svg") no-repeat center/100%;
+  background: linear-gradient(44.89deg, #003d85 25.38%, #b80027 74.89%);
+  transition: all 0.3s ease;
+
+  &:hover,
+  &:focus {
+    box-shadow: 1px -1px 6px 0 $red,
+                -1px 1px 6px 0 $blue;
+  }
+
+  &:active {
+    box-shadow: none;
+
+    &::after {
+      transition: opacity 0.3s ease;
+      opacity: 1;
+    }
+  }
 
   @include tablet {
-    @include box(9.5vw, 9.5vw);
+    @include box(6.77vw, 6.77vw);
   }
 
   @include mobile {
-    @include box(22.8vw, 22.8vw);
+    @include box(16.25vw, 16.25vw);
   }
 
   &::before {
-    @include pseudo-abs(null, null, 42%, 41%);
+    @include pseudo-abs(null, null, 50%, 50%);
     border: 0.52vw solid transparent;
     border-left: 0.9vw solid #ffffff;
     border-right: none;
+    transform: translate(70%, -58%);
 
     @include tablet {
-      top: 41%;
-      right: 34%;
       border: 0.72vw solid transparent;
       border-left: 1.3vw solid #ffffff;
+      transform: translate(68%, -58%);
     }
 
     @include mobile {
-      top: 41.5%;
-      right: 35.5%;
       border: 1.6vw solid transparent;
       border-left: 2.5vw solid #ffffff;
+      transform: translate(78%, -58%);
+    }
+  }
+
+  &::after {
+    @include pseudo-abs(7.272vw, 7.272vw, 50%, 50%);
+    border: 2px solid;
+    border-image: url("../img/svg/ellipse.svg") 0 0 0 0 fill;
+    transform: translate(50%, -50%);
+    opacity: 0.2;
+
+    @include tablet {
+      @include box(9.5vw, 9.5vw);
+    }
+
+    @include mobile {
+      @include box(22.8vw, 22.8vw);
     }
   }
 }

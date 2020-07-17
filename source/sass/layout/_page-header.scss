@@ -61,6 +61,7 @@
   @include font-size(26px, 26px, 0.03em);
   display: block;
   text-decoration: none;
+  transition: all 0.3s ease;
 
   &:hover,
   &:focus {

@@ -1,5 +1,6 @@
 .coach {
   position: relative;
+  transition: all 0.3s ease;
 
   &:hover {
     box-shadow: 0 0 35px rgba(42, 59, 99, 0.17);
@@ -22,7 +23,8 @@
   @include font-source("Roboto Condensed", $white, 400);
   background: transparent;
   text-align: center;
-  padding: 20% 0 0;
+  padding: 19.2% 0 0;
+  transition: all 0.3s ease;
 }
 
 .coach__name {
@@ -33,8 +35,8 @@
 }
 
 .coach__spec {
-  @include font-size(16px, 24px);
-  margin: 0 0 11%;
+  @include font-size(16px, 18px);
+  margin: 0 0 13.5%;
   color: #b6bdcc;
 }
 

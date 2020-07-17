@@ -20,6 +20,28 @@
   }
 }
 
+.promotions__container {
+  align-items: stretch;
+}
+
+.promotions__big {
+  width: 48.3%;
+  flex-grow: 1;
+  margin-right: 3.4%;
+  align-self: center;
+
+  @include tablet {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  @include mobile {
+    padding: 0 4.5%;
+    margin: 0 0 30px;
+  }
+}
+
 .promotions__group {
   @include flex-container($direction: column);
   width: 48.3%;
@@ -38,25 +60,22 @@
 
 .promotions__item {
   width: 100%;
+  margin: 3.57% 0;
+
+  &:first-of-type {
+    margin-top: 0;
+  }
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
 
   @include tablet {
     width: 47.7%;
+    margin: 0;
   }
 
   @include mobile {
     width: 100%;
-  }
-
-  &--big {
-    width: 48.3%;
-
-    @include tablet {
-      width: 100%;
-      margin-bottom: 30px;
-    }
-
-    @include mobile {
-      margin: 0 4.5% 30px;
-    }
   }
 }

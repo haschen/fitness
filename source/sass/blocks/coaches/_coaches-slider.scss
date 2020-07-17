@@ -10,6 +10,7 @@
 
   @include mobile {
     width: 70.625%;
+    max-width: 450px;
   }
 }
 
@@ -30,7 +31,7 @@
   overflow: hidden;
 
   &::after {
-    @include pseudo-abs(24px, 24px, 1px);
+    @include pseudo-abs(24px, 24px, 0);
     position: relative;
     border-bottom: 1px solid $grey;
     border-left: 1px solid $grey;
@@ -59,11 +60,11 @@
 
   @include tablet {
     &--next {
-      right: -11%;
+      right: -10.5%;
     }
 
     &--prev {
-      left: -11%;
+      left: -10%;
     }
   }
 

@@ -15,6 +15,7 @@
 
 .contacts-item__text {
   @include font-size(14px, 27px);
+  display: block;
   margin: 0;
   font-weight: 400;
 

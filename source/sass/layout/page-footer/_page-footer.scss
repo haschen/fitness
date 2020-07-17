@@ -1,18 +1,18 @@
 .page-footer {
-  padding: 41px 0 39px;
+  padding: 31px 0 29px;
   background: $bg-footer;
 
   @include tablet {
-    padding: 45px 0 41px;
+    padding: 34px 0 32px;
   }
 
   @include mobile {
-    padding: 50px 0 46px;
+    padding: 39px 0 19px;
   }
 }
 
 .page-footer__container {
-  @include flex-container($alignment: center);
+  @include flex-container($spacing: center, $alignment: center, $wrap: wrap);
   @include horizontalCenter(85%);
   position: relative;
 
@@ -29,10 +29,16 @@
 
 .page-footer__nav {
   flex-grow: 1;
+  padding: 10px 0;
+
+  @include mobile {
+    padding: 10px 0 0;
+  }
 }
 
 .page-footer__logo {
   display: block;
+  padding: 10px 0;
 
   &:hover,
   &:focus {
@@ -48,7 +54,7 @@
   }
 
   @include mobile {
-    @include pos-abs($r: 0, $l: 0);
+    @include pos-abs($t: 1%, $l: 0);
     @include box(20px, 87px);
   }
 
@@ -64,4 +70,8 @@
       height: 15px;
     }
   }
+}
+
+.page-footer__social {
+  padding: 10px 0;
 }

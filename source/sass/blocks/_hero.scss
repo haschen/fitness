@@ -110,6 +110,7 @@
   text-transform: uppercase;
   text-decoration: none;
   border: 4px solid $white;
+  transition: all 0.3s ease;
 
   &:hover,
   &:focus {
@@ -124,7 +125,7 @@
 
   @include tablet {
     font-size: 1.55vw;
-    margin-top: 49px;
+    margin-top: 47px;
     padding: 2.5vw 4vw;
   }
 

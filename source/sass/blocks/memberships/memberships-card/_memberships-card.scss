@@ -4,8 +4,10 @@
   border: 7px solid;
   border-color: $white;
   background: $white;
+  transition: all 0.3s ease;
 
   &:hover {
+    transition: all 0.3s ease;
     border-color: transparent;
     border-image: linear-gradient(-225deg, #d10942 0%, #00359f 100%) 1;
 
@@ -65,7 +67,7 @@
   @include font-size(12px, 14px, 0.05em);
   @include horizontalCenter (59%);
   display: block;
-  margin-top: 35px;
+  margin-top: 34px;
   padding: 25px 15px;
   color: $blue--darken;
   text-transform: uppercase;

@@ -1,12 +1,12 @@
 .memberships {
   position: relative;
   padding-top: 114px;
-  padding-bottom: 120px;
+  padding-bottom: 90px;
   text-align: center;
   z-index: 1;
 
   &::after {
-    @include pseudo-abs(100%, 390px, 67.3%, 0);
+    @include pseudo-abs(100%, 390px, 67.5%, 0);
     background-image: url("../img/memberships-bg-desktop@1x.png");
     background-repeat: no-repeat;
     background-position: 114% 25%;
@@ -58,14 +58,24 @@
 }
 
 .memberships__card {
-  flex: 0 1 31.3%;
+  flex: 0 1 31.2%;
+  margin: 0 1.6% 30px;
+
+  &:first-of-type,
+  &:nth-of-type(4n) {
+    margin-left: 0;
+  }
+
+  &:nth-of-type(3n) {
+    margin-right: 0;
+  }
 
   @include tablet {
     flex: 1 1 100%;
-    margin-bottom: 41px;
+    margin: 0 0 42px;
 
     &:last-of-type {
-      margin-bottom: 0;
+      margin: 0;
     }
   }
 
